@@ -173,11 +173,13 @@ plt.xlabel('epoch')
 plt.legend(['train', 'validation'], loc='upper left')
 plt.show()
 
+from google.colab import drive
+drive.mount('/content/drive')
 
 import h5py
 json_string = model.to_json()
-model.save_weights('./Face_model_weights.h5')
-open('./Face_model_architecture.json', 'w').write(json_string)
+model.save_weights('/content/drive/Face_model_weights.h5')
+open('/content/drive/Face_model_architecture.json', 'w').write(json_string)
 
 
 

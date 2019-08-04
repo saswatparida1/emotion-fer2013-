@@ -176,8 +176,8 @@ plt.show()
 
 import h5py
 json_string = model.to_json()
-model.save_weights('./models/Face_model_weights.h5')
-open('./models/Face_model_architecture.json', 'w').write(json_string)
+model.save_weights('./Face_model_weights.h5')
+open('./Face_model_architecture.json', 'w').write(json_string)
 
 
 
